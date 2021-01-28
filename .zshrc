@@ -101,6 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-alias ls="ls -ahl"
+alias ls="ls -ahl --color"
 
 export PATH=/home/anon/.nimble/bin:$PATH
