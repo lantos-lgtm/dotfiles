@@ -11,9 +11,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'sudo apt -y install build-essential libopenblas-dev liblapack-dev
 
 
-alias ls='ls -ahl'
-
-       
-
 # Arraymancer
 sudo apt -y install build-essential libopenblas-dev liblapack-dev
