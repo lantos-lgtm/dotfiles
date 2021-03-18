@@ -1,4 +1,6 @@
-# dotfiles
+# Dotfiles
+## General
+```bash
 sudo apt update & upgrade -y
 sudo apt install -y python3 python3-pip build-essential zsh neovim tmux git
 
@@ -15,9 +17,16 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 curl -o- -L https://yarnpkg.com/install.sh | bash
 
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
 
-# Arraymancer
+```
+
+## Arraymancer
+```bash
 sudo apt -y install build-essential libopenblas-dev liblapack-dev
+```
+## Pytorch
 
-# Pytorch
+```bash
 pip3 install torch
+```
