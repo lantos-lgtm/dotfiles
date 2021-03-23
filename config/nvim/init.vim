@@ -12,8 +12,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 
-Plug 'gruvbox-community/gruvbox'
-Plug 'sainnhe/gruvbox-material'
+"Plug 'gruvbox-community/gruvbox'
+"Plug 'sainnhe/gruvbox-material'
+Plug 'ayu-theme/ayu-vim'
 
 Plug 'vim-airline/vim-airline'
 " Plug 'nathanaelkane/vim-indent-guides'
@@ -68,9 +69,13 @@ au BufReadPost,BufNewFile *.nim setlocal tabstop=4
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 
-let g:gruvbox_contrast_dark = 'medium'
-colorscheme gruvbox
-set background=dark
+"let g:gruvbox_contrast_dark = 'medium'
+"colorscheme gruvbox
+"set background=dark
+set termguicolors     " enable true colors support
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
+
 
 " indent
 " let g:indent_guides_enable_on_vim_startup = 1
