@@ -4,6 +4,9 @@
 sudo apt update & upgrade -y
 sudo apt install -y python3 python3-pip build-essential zsh neovim tmux git gcc g++ make
 
+sudo apt-get install fonts-powerline
+
+
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
