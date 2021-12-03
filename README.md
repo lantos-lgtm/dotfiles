@@ -8,6 +8,9 @@ sudo apt-get install fonts-powerline
 
 
 curl -fsSL https://test.docker.com | sh 
+sudo usermod -aG docker $USER
+
+
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
