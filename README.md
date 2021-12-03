@@ -7,6 +7,7 @@ sudo apt install -y python3 python3-pip build-essential zsh neovim tmux git gcc 
 sudo apt-get install fonts-powerline
 
 
+curl -fsSL https://test.docker.com | sh 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
