@@ -1,8 +1,8 @@
 # Dotfiles
 ## General
 ```bash
-sudo apt update & upgrade -y
-sudo apt install -y python3 python3-pip build-essential zsh neovim tmux git gcc g++ make
+sudo apt update & sudo apt upgrade -y
+sudo apt install -y python3 python3-pip build-essential zsh neovim tmux git gcc g++ make curl
 
 sudo apt-get install fonts-powerline
 
