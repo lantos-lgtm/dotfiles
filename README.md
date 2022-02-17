@@ -1,8 +1,9 @@
 # Dotfiles
 ## General
 ```bash
-sudo apt update & upgrade -y
+sudo apt update & sudo apt upgrade -y
 sudo apt install -y python3 python3-pip build-essential zsh neovim tmux git gcc g++ make
+sudo apt install curl
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -31,4 +32,24 @@ sudo apt -y install build-essential libopenblas-dev liblapack-dev
 
 ```bash
 pip3 install torch
+```
+
+## vscode
+
+```json
+{
+    "telemetry.telemetryLevel": "off",
+    "window.dialogStyle": "custom",
+    "window.titleBarStyle": "custom",
+    "zigLanguageClient.path": "/home/anon/zls/zls",
+    // "zig.buildOnSave": true,
+    "debug.onTaskErrors": "showErrors",
+    "debug.allowBreakpointsEverywhere": true,
+    "workbench.colorTheme": "Ayu Mirage Bordered",
+    "[zig]": {
+        "editor.defaultFormatter": "SuperAuguste.zls-vscode"
+    },
+    "omnisharp.useGlobalMono": "always",
+    "git.autofetch": true
+}
 ```

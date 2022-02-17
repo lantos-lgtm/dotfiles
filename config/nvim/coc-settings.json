@@ -1,0 +1,23 @@
+{
+    "diagnostic.virtualTextCurrentLineOnly": false,
+    "diagnostic.virtualText": true,
+    "languageserver": {
+        "nimlsp": {
+            "command": "nimlsp",
+            "filetypes": ["nim"]
+        },
+        "ccls": {
+            "command": "ccls",
+            "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+            "rootPatterns": [".ccls-root", "compile_commands.json"],
+            "initializationOptions": {
+                "cache": {
+                    "directory": ".ccls-cache"
+                },
+                "client": {
+                    "snippetSupport": true
+                }
+            }
+        }
+    }
+}
