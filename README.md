@@ -2,8 +2,17 @@
 ## General
 ```bash
 sudo apt update & sudo apt upgrade -y
-sudo apt install -y python3 python3-pip build-essential zsh neovim tmux git gcc g++ make
-sudo apt install curl
+sudo apt install -y python3 python3-pip build-essential zsh neovim tmux git gcc g++ make curl
+
+sudo apt-get install fonts-powerline
+
+
+curl -fsSL https://test.docker.com | sh 
+sudo usermod -aG docker $USER
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

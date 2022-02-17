@@ -6,9 +6,11 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-Plug 'gruvbox-community/gruvbox'
-Plug 'sainnhe/gruvbox-material'
-"Plug 'ayu-theme/ayu-vim' " colour scheme
+
+"Plug 'gruvbox-community/gruvbox'
+"Plug 'sainnhe/gruvbox-material'
+Plug 'ayu-theme/ayu-vim'
+
 Plug 'vim-airline/vim-airline'
 Plug 'Yggdroot/indentLine'
 
@@ -74,9 +76,20 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-let g:gruvbox_contrast_dark = 'medium'
-colorscheme gruvbox
-set background=dark
+au BufReadPost,BufNewFile *.nim setlocal shiftwidth=4
+au BufReadPost,BufNewFile *.nim setlocal tabstop=4
+
+
+let g:coc_global_extensions = [ 'coc-tsserver' ]
+
+
+"let g:gruvbox_contrast_dark = 'medium'
+"colorscheme gruvbox
+"set background=dark
+set termguicolors     " enable true colors support
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
+
 
 "set termguicolors     " enable true colors support
 "let ayucolor="dark"   " for dark version of theme
